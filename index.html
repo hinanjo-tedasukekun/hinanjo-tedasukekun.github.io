@@ -1,46 +1,31 @@
 ---
-layout: page
-title: My website
-subtitle: This is where I will tell my friends way too much about me
+layout: home
+title: 避難所てだすけくん
+subtitle: 避難所をITのちからでスマートに
 ---
 
-<div class="posts-list">
-  {% for post in paginator.posts %}
-  <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
-	
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}  
-    </a>
-
-    <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
+<div class="row">
+  <div class="col-lg-10 col-lg-offset-1 col-md-12">
+    <p>
+      <a href="http://www3.jeed.or.jp/shizuoka/college/">浜松職業能力開発短期大学校</a>電子情報技術科では、地元企業との共同研究により地震等の大規模災害時に開設される避難所の効率的な運営を支援するシステム「<b>避難所てだすけくん</b>」を開発しています。
     </p>
-  
-    <div class="post-entry">
-      {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
-	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
-    </div>
-  
-   </article>
-  {% endfor %}
+  </div>
 </div>
-
-{% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
-  {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
+<div class="row">
+  <div class="col-sm-6 col-lg-5 col-lg-offset-1">
+    <div class="thumbnail">
+      <img src="img/server-battery.jpg" alt="" />
+      <div class="caption">
+        <h3>避難者名簿作成支援サーバー</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-5">
+    <div class="thumbnail">
+      <img src="img/com-system.jpg" alt="" />
+      <div class="caption">
+        <h3>無線通信システム</h3>
+      </div>
+    </div>
+  </div>
+</div>

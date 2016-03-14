@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{% if page.title %}
+<header class="header-page">
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-1 col-md-12">
+	  <div class="jumbotron page-heading page-heading-home">
+	    {% if page.subtitle %}
+        <p><span class="page-subheading page-subheading-home">{{ page.subtitle }}</span></p>
+	    {% endif %}
+	    <h1>{{ page.title }}</h1>
+	  </div>
+    </div>
+  </div>
+</header>
+{% endif %}
+
+{{ content }}

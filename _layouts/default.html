@@ -12,23 +12,15 @@ common-js:
   - "/js/bootstrap.min.js"
   - "/js/main.js"
 ---
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ja">
   {% include head.html %}
-
   <body>
-
     {% include nav.html %}
-
     <div role="main" class="container main-content">
       {{ content }}
     </div>
-
     {% include footer.html %}
-
     {% include footer-scripts.html %}
-
   </body>
 </html>
