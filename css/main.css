@@ -421,6 +421,7 @@ table tr td :last-child {
 
 .jumbotron.page-heading-home {
   margin-bottom: 0;
+  background-color: #e3f2fa;
 }
 
 .jumbotron strong.title {
